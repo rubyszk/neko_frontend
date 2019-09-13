@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Story from './components/Story';
 
 function App() {
   return (
     <div className="App">
-      <h1>!</h1>
+      <Story/>
      
     </div>
   );
