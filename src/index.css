@@ -1,13 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin: 100px;
+  font-family: 'Goethe', serif;
+  text-align: center;
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+button {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  font-family: 'GoetheBold', serif;
+  font-size: 18px;
+  border: 1px solid white;
+}
+
+#content {
+  border: 2px solid white;
+  border-radius: 2px;
+  padding-bottom: 35px;
+  padding: 30px;
+  color: white;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 500px) {
+  #content {
+    text-align: center;
+  }
+
+  button {
+    margin: 10px;
+  }
+
+  p {
+    margin: 10px;
+  }
 }

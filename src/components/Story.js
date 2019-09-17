@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import $ from 'jquery';
 
 const backend = 'http://localhost:3000/stories'
 
@@ -30,20 +31,40 @@ class Story extends Component {
     }
 
     handleClick (event) {
-        const thing = event.target.id
+        const eventId = event.target.id
 
-//      if {response.response} innerHTML = "pick up item" =>
+        if (event.target.innerText === `ok`) {
+            console.log("ok!")
+        }
+//      if event.target.innerText = "pick up item" =>
 //      axios "put request", update boolean to true
 
         this.setState({
-            currentParagraph: thing
+            currentParagraph: eventId
         }, () => this.getParagraph())
     }
 
+
+    // async handleUpdate() {
+    //     event.preventDefault();
+    //     if this.state.paragraph.id === 
+    //     let res = await axios.put('url', {data})
+    //     else if 
+    //     else if this.state.paragraph.id === last paragraph,
+    //     DB RESET, set all to false 
+        
+    // }
+
+
+    //this.state.image
+
+
+
     render () {        
         return (
-            <div>
-                <h1>{this.state.paragraph}</h1>
+            <div id="background">
+                <div id="content">
+                <p>{this.state.paragraph}</p>
                 {
                     this.state.responses.map( (response, index) => {
                         return(
@@ -51,7 +72,7 @@ class Story extends Component {
                         )
                     })
                 }
-                
+                </div>
             </div>
         )
     }
