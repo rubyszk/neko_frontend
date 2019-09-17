@@ -2,6 +2,7 @@ import React from 'react';
 import Story from './components/Story';
 import styled from 'styled-components';
 
+
 const Paragraph = styled.p`
       font-size: 28px
       padding-left: 25px;

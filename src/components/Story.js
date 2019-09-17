@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import $ from 'jquery';
 
-const backend = 'https://neko-app-api.herokuapp.com/stories'
+const backend = process.env.REACT_APP_BASEURL
 
 
 class Story extends Component {
