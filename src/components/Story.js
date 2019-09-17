@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import $ from 'jquery';
 
-const backend = 'http://localhost:3000/stories'
+const backend = 'https://neko-app-api.herokuapp.com/stories'
 
 
 class Story extends Component {
