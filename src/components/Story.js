@@ -21,7 +21,6 @@ class Story extends Component {
         this.getParagraph()
     }
 
-    
     async getParagraph () {
         const response = await axios(`${backend}/${this.state.currentParagraph}`)
         const data = response.data;
