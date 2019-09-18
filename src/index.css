@@ -1,11 +1,11 @@
 
 @font-face {
-  font-family: 'Goethe', serif;
+  font-family: 'Goethe';
   src: url('/public/Goethe.ttf')
 }
 
 @font-face {
-  font-family: 'GoetheBold', serif;
+  font-family: 'GoetheBold';
   src: url('/public/GoetheBold.ttf')
 }
 
