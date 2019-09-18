@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: 'Goethe';
-  src: url('/public/Goethe.ttf')
+  src: url('/Goethe.ttf')
 }
 
 @font-face {
   font-family: 'GoetheBold';
-  src: url('/public/GoetheBold.ttf')
+  src: url('/GoetheBold.ttf')
 }
 
 body {
@@ -16,7 +16,6 @@ body {
   background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 button {
