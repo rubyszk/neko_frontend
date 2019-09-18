@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import $ from 'jquery';
 
 const backend = process.env.REACT_APP_BASEURL
 
