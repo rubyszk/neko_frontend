@@ -13,9 +13,6 @@ function App() {
       <Paragraph>
           <Story/>
       </Paragraph>
-
-      
-
     </div>
   );
 }
